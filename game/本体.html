@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム画面</title>
+    <link rel="stylesheet" href="本体.css">
+</head>
+<body>
+
+    <!-- スタート画面を読み込む -->
+    <div id="start-container"></div>
+
+    <script>
+        fetch("Start/start.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("start-container").innerHTML = data;
+        });
+    </script>
+
+
+</body>
+</html>
